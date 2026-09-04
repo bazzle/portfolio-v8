@@ -6,7 +6,7 @@ Personal professional website. With work showcase, about me, articles and more.
 
 [Live site](https://br-web.me)
 
-This is follows from [v7](https://github.com/bazzle/portfolio-v7) built in next.js
+This is follows from [v7](https://github.com/bazzle/portfolio-v7)
 
 ## What's new
 
@@ -18,10 +18,10 @@ This is follows from [v7](https://github.com/bazzle/portfolio-v7) built in next.
 
 ## Stack
 
-Framework: Next.js (App Router)
-Language: TypeScript
-Styling: CSS Modules with BEM naming; CSS variables for all design tokens
-Package manager: yarn (use yarn / yarn add / yarn dev — never mix in npm commands)
+Next.js (App Router)
+TypeScript
+CSS Modules with BEM naming; CSS variables
+Yarn
 
 ## Getting Started
 
@@ -40,4 +40,4 @@ yarn dev
 
 ### Phase 2 ✅ Design system
 
-* When Design System is launched, integrate it, consuming tokens from json file using storybook.
+* When Design System is launched, integrate it, consuming tokens from json file using [Style Dictionary](https://styledictionary.com/), or similar.
