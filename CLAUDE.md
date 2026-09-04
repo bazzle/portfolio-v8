@@ -4,7 +4,7 @@ Instructions for Claude Code working in this repository. Read this at the start 
 
 ## Project
 
-New portfolio website. With my work samples, writings and about me page.
+Personal professional website. With work showcase, about me, articles and more.
 
 ## Stack
 
