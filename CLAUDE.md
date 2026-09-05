@@ -50,7 +50,7 @@ Code style: explicit over clever. I need to be able to read this code without de
 ## About the design
 
 - The design has a light and dark mode
-- The font used is a variable font, and has different font-width axes based on the font token
+- The font used is a variable font called Satoshi, and has different font-width axes based on the font token.
 
 ## Using Figma
 
@@ -71,9 +71,8 @@ I'll review on GitHub and leave line comments.
 
 1. **Plan mode first.** For any non-trivial change, produce a plan and wait for approval before writing code.
 2. **One thing per branch.** I'll define the scope of each PR. We'll aim for small changes for each PR.
-3. **Tests ship with the change.** No "I'll add tests later." Cover the behavior you just wrote.
-4. **Visual QA against Figma.** After building a UI change, screenshot it and compare to the Figma frame. Flag any drift.
-5. **Post-change diff review.** After the change works, review your own diff and flag anything over-engineered or removable.
+3. **Visual QA against Figma.** When done I'll review against Figma as part of my review process.
+4. **Post-change diff review.** After the change works, review your own diff and flag anything over-engineered or removable.
 
 ## Figma handoff
 
@@ -85,7 +84,7 @@ When I share a Figma link:
 
 ## Session hygiene
 
-Update TODO.md and CHANGELOG.md as part of each PR — TODO.md reflects what's now done and what's next, CHANGELOG.md gets a one-line entry for what shipped.
+Update CHANGELOG.md as part of each PR a one-line entry for what shipped.
 Commit messages: imperative mood, one line, describe what and why briefly. Example: Add nav dropdown; keyboard-navigable per a11y checklist.
 
 ## Things to ask before doing
@@ -95,3 +94,51 @@ Commit messages: imperative mood, one line, describe what and why briefly. Examp
 - Changing a design token.
 - Refactoring code outside the scope of the current task.
 - Anything that would produce a diff larger than ~200 lines.
+
+## Font usage
+
+See below for some info about the font. And how to use it.
+
+Font Family: Satoshi
+Designed by: Deni Anggara
+URL: https://www.fontshare.com/fonts/satoshi
+© 2026 Indian Type Foundry
+
+Satoshi Variable (Variable font)
+
+This is a variable font
+You can control variable axes as shown below:
+`font-variation-settings: wght 900.0;`
+
+available axes:
+`'wght' (range from 300.0 to 900.0)`
+
+How to load font
+```
+@font-face {
+  font-family: 'Satoshi-Variable';
+  src: url('fonts/Satoshi-Variable.woff2') format('woff2')
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+```
+
+Satoshi VariableItalic (Variable font)
+
+You can control variable axes as shown below:
+font-variation-settings: wght 900.0;
+
+available axes:
+`'wght' (range from 300.0 to 900.0`
+
+```
+@font-face {
+  font-family: 'Satoshi-VariableItalic';
+  src: url('../fonts/Satoshi-VariableItalic.woff2') format('woff2')
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: italic;
+}
+```
+
