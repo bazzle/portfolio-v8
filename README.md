@@ -33,11 +33,11 @@ yarn dev
 
 ## Rough roadmap
 
-### Phase 1 ✅ Initial build and content population
+### Phase 1 Initial build and content population
 
 * Build-out site exactly to spec from Figma file.
 * Content review of V7, add new content and migrate existing.
 
-### Phase 2 ✅ Design system
+### Phase 2 Design system
 
 * When Design System is launched, integrate it, consuming tokens from json file using [Style Dictionary](https://styledictionary.com/), or similar.
