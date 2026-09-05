@@ -1,0 +1,59 @@
+// One class per type style in the Figma type scale, named after the character
+// Figma names it after. Each sets only size, line height and weight — colour,
+// spacing and margins stay the caller's responsibility.
+
+.text-display-dan {
+	font-size: var(--font-size-display-dan);
+	line-height: var(--line-height-display-dan);
+	font-weight: var(--font-weight-display-dan);
+}
+
+.text-attention-andy {
+	font-size: var(--font-size-attention-andy);
+	line-height: var(--line-height-attention-andy);
+	font-weight: var(--font-weight-attention-andy);
+}
+
+.text-standout-steven {
+	font-size: var(--font-size-standout-steven);
+	line-height: var(--line-height-standout-steven);
+	font-weight: var(--font-weight-standout-steven);
+}
+
+.text-hand-up-harry {
+	font-size: var(--font-size-hand-up-harry);
+	line-height: var(--line-height-hand-up-harry);
+	font-weight: var(--font-weight-hand-up-harry);
+}
+
+.text-long-read-larry {
+	font-size: var(--font-size-long-read-larry);
+	line-height: var(--line-height-long-read-larry);
+	font-weight: var(--font-weight-long-read-larry);
+}
+
+.text-small-text-sophie-bold {
+	font-size: var(--font-size-small-text-sophie-bold);
+	line-height: var(--line-height-small-text-sophie-bold);
+	font-weight: var(--font-weight-small-text-sophie-bold);
+}
+
+.text-small-text-sophie {
+	font-size: var(--font-size-small-text-sophie);
+	line-height: var(--line-height-small-text-sophie);
+	font-weight: var(--font-weight-small-text-sophie);
+}
+
+// Uppercase is part of the style in Figma, not a choice at point of use.
+.text-blocky-blake {
+	font-size: var(--font-size-blocky-blake);
+	line-height: var(--line-height-blocky-blake);
+	font-weight: var(--font-weight-blocky-blake);
+	text-transform: uppercase;
+}
+
+.text-tiny-tim {
+	font-size: var(--font-size-tiny-tim);
+	line-height: var(--line-height-tiny-tim);
+	font-weight: var(--font-weight-tiny-tim);
+}
