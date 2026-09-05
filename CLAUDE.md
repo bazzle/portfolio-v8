@@ -52,6 +52,12 @@ Code style: explicit over clever. I need to be able to read this code without de
 - The design has a light and dark mode
 - The font used is a variable font, and has different font-width axes based on the font token
 
+## Using Figma
+
+- Use `get_design_context` for frame structure and `get_variable_defs` when extracting tokens.
+- Prefer fetching design context directly over asking me to describe frames.
+- Preserve Figma variable names exactly when extracting tokens. `gap-800` in Figma becomes `--gap-800` in CSS. Never rename in translation.
+
 ## Pull requests
 
 - I scope each PR when I prompt you. Stay inside that scope. Do exactly what I asked, nothing more. Don't drift into adjacent files, "while I was here" refactors, tidy-ups, renames, or improvements I didn't request — even if they seem obviously good.
