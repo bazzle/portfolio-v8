@@ -70,9 +70,12 @@ I'll review on GitHub and leave line comments.
 ## Workflow
 
 1. **Plan mode first.** For any non-trivial change, produce a plan and wait for approval before writing code.
-2. **One thing per branch.** I'll define the scope of each PR. We'll aim for small changes for each PR.
-3. **Visual QA against Figma.** When done I'll review against Figma as part of my review process.
+2. **Clarify before starting.** If the prompt is ambiguous or has unstated assumptions, ask before writing code — don't guess.
+3. **One thing per branch.** I'll define the scope of each PR. We'll aim for small changes for each PR.
 4. **Post-change diff review.** After the change works, review your own diff and flag anything over-engineered or removable.
+5. **Open the PR.** Push the branch and open the PR via `gh`. Include a clear description and any "Follow-ups" noted during the work. Task is considered done at this point — don't expect further terminal prompts on the same branch.
+6. **Review moves to GitHub.** I'll leave review comments on the PR. Changes requested via `@claude` mentions in the PR, not via the terminal — this keeps context tight to the specific comment.
+7. **Visual QA against Figma.** I'll review the rendered result against Figma as part of my review.
 
 ## Figma handoff
 
