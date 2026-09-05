@@ -117,7 +117,7 @@ How to load font
 ```
 @font-face {
   font-family: 'Satoshi-Variable';
-  src: url('fonts/Satoshi-Variable.woff2') format('woff2')
+  src: url('fonts/Satoshi-Variable.woff2') format('woff2');
   font-weight: 300 900;
   font-display: swap;
   font-style: normal;
@@ -135,7 +135,7 @@ available axes:
 ```
 @font-face {
   font-family: 'Satoshi-VariableItalic';
-  src: url('../fonts/Satoshi-VariableItalic.woff2') format('woff2')
+  src: url('../fonts/Satoshi-VariableItalic.woff2') format('woff2');
   font-weight: 300 900;
   font-display: swap;
   font-style: italic;
