@@ -1,0 +1,115 @@
+// Raw values from the Figma "Primitives" and "Width" collections.
+// Names are taken verbatim from Figma — colors/teal-on-dark/900 becomes
+// --color-teal-on-dark-900. Nothing here is themed; see semantics.scss.
+//
+// Lengths are rem against the 62.5% root set in _base.scss, so 1rem = 10px
+// and the px value Figma specifies is the rem value with the point moved.
+
+:root {
+	/* Blacks */
+	--color-black-600: #313131;
+	--color-black-700: #202020;
+	--color-black-800: #161616;
+	--color-black-900: #000000;
+
+	/* Whites */
+	--color-white-400: #c6c6c6;
+	--color-white-500: #d1d1d1;
+	--color-white-600: #dddddd;
+	--color-white-700: #efefef;
+	--color-white-800: #fbfbfb;
+	--color-white-900: #ffffff;
+
+	/* Teal — for dark surfaces */
+	--color-teal-on-dark-100: #2c3536;
+	--color-teal-on-dark-200: #384a4d;
+	--color-teal-on-dark-300: #455f63;
+	--color-teal-on-dark-400: #517479;
+	--color-teal-on-dark-500: #5d8a90;
+	--color-teal-on-dark-600: #699fa6;
+	--color-teal-on-dark-700: #75b4bc;
+	--color-teal-on-dark-800: #82c9d2;
+	--color-teal-on-dark-900: #9af3ff;
+
+	/* Teal — for light surfaces */
+	--color-teal-on-light-100: #dde3e4;
+	--color-teal-on-light-200: #ccd8d9;
+	--color-teal-on-light-300: #bbcdcf;
+	--color-teal-on-light-400: #aac2c5;
+	--color-teal-on-light-500: #98b6ba;
+	--color-teal-on-light-600: #87abb0;
+	--color-teal-on-light-700: #76a0a6;
+	--color-teal-on-light-800: #65959c;
+	--color-teal-on-light-900: #437f87;
+
+	/* Coral — for dark surfaces */
+	--color-coral-on-dark-100: #362e2e;
+	--color-coral-on-dark-200: #4d3c3c;
+	--color-coral-on-dark-300: #634949;
+	--color-coral-on-dark-400: #795757;
+	--color-coral-on-dark-500: #906565;
+	--color-coral-on-dark-600: #a67373;
+	--color-coral-on-dark-700: #bc8181;
+	--color-coral-on-dark-800: #d28e8e;
+	--color-coral-on-dark-900: #ffaaaa;
+
+	/* Coral — for light surfaces */
+	--color-coral-on-light-100: #e8dede;
+	--color-coral-on-light-200: #e2cdcd;
+	--color-coral-on-light-300: #dcbdbd;
+	--color-coral-on-light-400: #d6acac;
+	--color-coral-on-light-500: #d09c9c;
+	--color-coral-on-light-600: #cb8c8c;
+	--color-coral-on-light-700: #c57b7b;
+	--color-coral-on-light-800: #bf6b6b;
+	--color-coral-on-light-900: #b34a4a;
+
+	/* Spacing */
+	--spacing-gap-400: 0.5rem;
+	--spacing-gap-500: 1.5rem;
+	--spacing-gap-600: 3rem;
+	--spacing-gap-700: 5rem;
+	--spacing-gap-750: 7rem;
+	--spacing-gap-800: 10rem;
+
+	/* Widths */
+	--site-width: 90rem;
+	--body-width: 60rem;
+
+	/* Type family — every style uses the one variable font, whose 300–900
+	   range covers all nine weights below. */
+	--font-family: 'Satoshi Variable', system-ui, -apple-system, sans-serif;
+
+	/* Type sizes */
+	--font-size-display-dan: 6.4rem;
+	--font-size-attention-andy: 2.8rem;
+	--font-size-standout-steven: 1.9rem;
+	--font-size-hand-up-harry: 1.7rem;
+	--font-size-long-read-larry: 1.6rem;
+	--font-size-small-text-sophie-bold: 1.4rem;
+	--font-size-small-text-sophie: 1.4rem;
+	--font-size-blocky-blake: 1.2rem;
+	--font-size-tiny-tim: 1.2rem;
+
+	/* Line heights — `normal` where Figma sets the style to AUTO */
+	--line-height-display-dan: 7.2rem;
+	--line-height-attention-andy: 3.6rem;
+	--line-height-standout-steven: 2.6rem;
+	--line-height-hand-up-harry: 2.4rem;
+	--line-height-long-read-larry: 2.6rem;
+	--line-height-small-text-sophie-bold: normal;
+	--line-height-small-text-sophie: normal;
+	--line-height-blocky-blake: normal;
+	--line-height-tiny-tim: normal;
+
+	/* Type weights */
+	--font-weight-display-dan: 900;
+	--font-weight-attention-andy: 600;
+	--font-weight-standout-steven: 650;
+	--font-weight-hand-up-harry: 700;
+	--font-weight-long-read-larry: 450;
+	--font-weight-small-text-sophie-bold: 700;
+	--font-weight-small-text-sophie: 500;
+	--font-weight-blocky-blake: 700;
+	--font-weight-tiny-tim: 500;
+}

@@ -1,0 +1,55 @@
+// Themed colours from the Figma "Colors" collection, which has a Light and a
+// Dark mode. Every value is an alias onto a primitive — no hex appears here.
+//
+// Light doubles as the :root default so the site renders correctly before any
+// JS runs. The theme switcher only has to set data-theme on <html>.
+//
+// The two -transparent tokens are COMPOSE_COLOR(target, 70) in Figma — 70%
+// alpha over the aliased primitive.
+
+:root,
+[data-theme='light'] {
+	--color-fg-solid: var(--color-black-900);
+	--color-fg: var(--color-black-600);
+	--color-fg-inv: var(--color-white-900);
+
+	--color-bg: var(--color-white-800);
+	--color-bg-inv: var(--color-black-800);
+	--color-bg-alt: var(--color-white-700);
+	--color-bg-alt-transparent: color-mix(in srgb, var(--color-white-700) 70%, transparent);
+	--color-bg-solid: var(--color-white-900);
+	--color-bg-solid-transparent: color-mix(in srgb, var(--color-white-900) 70%, transparent);
+	--color-bg-off-solid: var(--color-white-800);
+
+	--color-focus: var(--color-teal-on-light-900);
+	--color-accent: var(--color-teal-on-light-900);
+	--color-accent-moderate: var(--color-teal-on-light-500);
+	--color-accent-muted: var(--color-teal-on-light-200);
+	--color-accent-alt: var(--color-coral-on-light-900);
+	--color-accent-alt-moderate: var(--color-coral-on-light-700);
+	--color-accent-alt-muted: var(--color-coral-on-light-500);
+	--color-feint-line: var(--color-teal-on-light-200);
+}
+
+[data-theme='dark'] {
+	--color-fg-solid: var(--color-white-900);
+	--color-fg: var(--color-white-900);
+	--color-fg-inv: var(--color-black-600);
+
+	--color-bg: var(--color-black-800);
+	--color-bg-inv: var(--color-white-800);
+	--color-bg-alt: var(--color-black-800);
+	--color-bg-alt-transparent: color-mix(in srgb, var(--color-black-800) 70%, transparent);
+	--color-bg-solid: var(--color-black-900);
+	--color-bg-solid-transparent: color-mix(in srgb, var(--color-black-900) 70%, transparent);
+	--color-bg-off-solid: var(--color-black-800);
+
+	--color-focus: var(--color-teal-on-dark-900);
+	--color-accent: var(--color-teal-on-dark-900);
+	--color-accent-moderate: var(--color-teal-on-dark-900);
+	--color-accent-muted: var(--color-teal-on-dark-200);
+	--color-accent-alt: var(--color-coral-on-dark-900);
+	--color-accent-alt-moderate: var(--color-coral-on-dark-700);
+	--color-accent-alt-muted: var(--color-coral-on-dark-500);
+	--color-feint-line: var(--color-teal-on-dark-200);
+}

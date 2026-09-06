@@ -1,0 +1,15 @@
+// 62.5% puts 1rem at 10px, so every rem token maps to its Figma px value with
+// the decimal point moved one place. Set as a percentage rather than a fixed
+// px so it still scales with the reader's browser font-size setting.
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: var(--font-family);
+	font-size: var(--font-size-long-read-larry);
+	line-height: var(--line-height-long-read-larry);
+	font-weight: var(--font-weight-long-read-larry);
+	color: var(--color-fg);
+	background-color: var(--color-bg);
+}
